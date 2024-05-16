@@ -41,11 +41,26 @@ let user = {
     }
 }
 
-const result4 = user.getAge()
-const result5 = user.getAgeDetails()
+// const result4 = user.getAge()
+// const result5 = user.getAgeDetails()
 
-console.log(result5)
+// console.log(result5)
 
-// *
+// *access before declaring
+// we can access before declaring only function declaration we can't access function expression
+
+const result6 = add(5,4)
+console.log(result6)
+
+function add(num1,num2) {
+    return num1 + num2;
+}
+
+
+
+tryMultiply(5,3)
+const tryMultiply = function (num1, num2){
+    return num1 * num2
+} // this will throw error
 
 
